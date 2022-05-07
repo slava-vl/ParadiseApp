@@ -1,5 +1,5 @@
 import 'package:codelab_3/colors.dart';
-import 'package:codelab_3/screens/list_sreen.dart';
+import 'package:codelab_3/screens/landing_page.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -11,7 +11,7 @@ class SplashScreen extends StatelessWidget {
       const Duration(seconds: 2),
       () => Navigator.of(context).push(
         MaterialPageRoute(
-          builder: (context) => ListScreen(),
+          builder: (context) => LandingPage(),
         ),
       ),
     );
