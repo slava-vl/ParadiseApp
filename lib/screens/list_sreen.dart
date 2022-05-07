@@ -4,6 +4,8 @@ import 'package:codelab_3/models/attraction_model.dart';
 import 'package:codelab_3/widgets/attraction_card.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/bottom_bar_widget.dart';
+
 class ListScreen extends StatelessWidget {
   const ListScreen({Key? key}) : super(key: key);
 
@@ -11,7 +13,7 @@ class ListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false,
+        leading: const Icon(Icons.arrow_back_ios_rounded),
         elevation: 0,
         backgroundColor: Colors.transparent,
         iconTheme: const IconThemeData(color: Colors.white),
@@ -57,7 +59,8 @@ class ListScreen extends StatelessWidget {
                     );
                   },
                 ),
-              )
+              ),
+              BottomBarWidget(),
             ],
           ),
         ),
